@@ -1,0 +1,11 @@
+
+    download Raspbian Lite from raspberrypi.org
+    copy the downloaded image to the SD card, e.g. sudo dd_rescue 2017-01-11-raspbian-jessie-lite.img /dev/mmcblk0
+    boot Raspberry Pi into freshly installed Raspbian
+    copy your video from USB flash drive to the SD card
+    sudo apt-get update
+    sudo apt-get install omxplayer
+    append this line /usr/bin/omxplayer -b --loop /home/pi/*.mp4 to file /etc/rc.local
+    set the file as executable: chmod +x /etc/rc.local
+    reboot and enjoy!
+
